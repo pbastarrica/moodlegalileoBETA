@@ -1,0 +1,21 @@
+<html>
+
+<script>
+function problemas()
+{
+var mylist=document.getElementById("myList");
+document.getElementById("favorite").value=mylist.options(mylist.selectedIndex).text;	
+}
+
+<body>
+<form>
+Selecciona tipo de problema:
+<select id="myList" onchange="favsports()">
+	<option>Link malo</option>
+	<option>Error al ingresar</option>
+	<option>Error 404</option>
+	<option>otro</option>
+</select>
+<p>Tu Problema es: <input type="text" id="favorite" size="20"></p> 
+</body>
+</html>
